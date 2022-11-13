@@ -126,16 +126,6 @@ body{
     transform: rotateZ(-45deg);
 }
 /* Main page */
-#main-pg{
-    width: 100%;
-    min-height: 100vh;
-    padding: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
 /* Headings */
 h1{
     font-size: 70px;
@@ -352,5 +342,8 @@ h6{
     }
     h6{
         font-size: 20px;
+    }
+    .pg{
+        padding: 100px 20px;
     }
 }
