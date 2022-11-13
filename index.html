@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
     <!-- Navigation Bar -->
     <nav class="nav-bar">
@@ -32,7 +34,9 @@
     <section id="main-pg" class="pg">
         <h1 class="main-heading">Women HealthCare</h1>
         <br>
-        <h4 class="main-abt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione et eius, sunt laudantium saepe dolorum consequuntur ipsum corrupti dolore velit possimus aspernatur, numquam quae modi sapiente alias ab enim rerum!</h4>
+        <h4 class="main-abt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione et eius, sunt laudantium
+            saepe dolorum consequuntur ipsum corrupti dolore velit possimus aspernatur, numquam quae modi sapiente alias
+            ab enim rerum!</h4>
         <br>
         <a href="#abt-pg" class="abt-btn btn">More Info</a>
     </section>
@@ -58,7 +62,9 @@
     <section id="main-data-pg" class="pg">
         <h1 class="main-data-heading">Medical <span>Service</span> Numbers</h1>
         <br>
-        <h4 class="main-data-abt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos quasi ullam dolorem iure tenetur suscipit veritatis sequi delectus fugiat beatae vero molestias hic sit, commodi corporis placeat reiciendis possimus itaque.</h4>
+        <h4 class="main-data-abt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos quasi ullam
+            dolorem iure tenetur suscipit veritatis sequi delectus fugiat beatae vero molestias hic sit, commodi
+            corporis placeat reiciendis possimus itaque.</h4>
         <br>
         <div class="ser-nos">
             <div class="ser-data">
@@ -77,24 +83,145 @@
         <br>
         <h1 class="main-data-heading">Medical <span>Facilities</span> Near You</h1>
         <br>
-        <h4 class="main-data-abt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos quasi ullam dolorem iure tenetur suscipit veritatis sequi delectus fugiat beatae vero molestias hic sit, commodi corporis placeat reiciendis possimus itaque.</h4>
+        <h4 class="main-data-abt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos quasi ullam
+            dolorem iure tenetur suscipit veritatis sequi delectus fugiat beatae vero molestias hic sit, commodi
+            corporis placeat reiciendis possimus itaque.</h4>
         <br>
-        <iframe class="map-window" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14009.83156250018!2d77.02190144850456!3d28.616035687574726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smedical%20facilities%20near%20me!5e0!3m2!1sen!2sin!4v1668271574700!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="map-window"
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14009.83156250018!2d77.02190144850456!3d28.616035687574726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smedical%20facilities%20near%20me!5e0!3m2!1sen!2sin!4v1668271574700!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <br>
         <br>
         <br>
         <br>
         <br>
-        <h1 class="main-data-heading">Appoint a <span>Professional</span></h1>
+        <h1 class="main-data-heading">Talk with a <span>Professional</span></h1>
         <br>
-        <button class="appoint-btn btn">Appoint</button>
+        <a href="mailto:doctor@example.com" target="_blank" class="abt-btn btn">Mail</a>
         <br>
     </section>
     <hr>
     <!-- Feedback & Terminologies -->
-    <section id="febk-pg" class="pg"></section>
+    <section id="febk-pg" class="pg">
+        <h1 class="febk-heading">Share your <span>Experience</span> with everyone</h1>
+        <br>
+        <fieldset>
+            <legend>
+                <h2>Writing Box</h2>
+            </legend>
+            <label for="name">
+                <h6>Name<span>*</span></h6>
+            </label>
+            <input type="text" name="name" id="name" placeholder="ex: Megha Kumari">
+            <br>
+            <br>
+            <label for="title">
+                <h6>Title<span>*</span></h6>
+            </label>
+            <input type="text" name="title" id="title" placeholder="ex: Periods">
+            <br>
+            <br>
+            <label for="message">
+                <h6>Message<span>*</span></h6>
+            </label>
+            <textarea name="message" id="message" cols="50" rows="10" placeholder="Type your message..."></textarea>
+            <br>
+            <br>
+            <a class="form-btn btn" onclick="addData()">Send</a>
+        </fieldset>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="febk-pg-subheading">See all the <span>Feedbacks</span> & <span>Terminologies</span></h2>
+        <br>
+        <a class="redirect-btn btn" href="feed.html" target="_blank">Check</a>
+        <br>
+    </section>
     <hr>
     <!-- Donation Page -->
-    <section id="donate" class="pg"></section>
+    <section id="donate" class="donate-pg pg">
+        <h1 class="donate-heading">Donation for the ones, who <span>need</span> help</h1>
+        <br>
+        <a class="redirect-btn btn">Donate</a>
+        <div class="donate-bx">
+            <fieldset>
+                <legend>
+                    <h2>Account Details</h2>
+                </legend>
+                <label for="app-names">
+                    <h6>Choose a UPI App<span>*</span></h6>
+                </label>
+                <select name="app-names" id="app-names" onchange="showDetails(this.value)">
+                    <option value="Paytm" selected>Paytm</option>
+                    <option value="PhonePe">PhonePe</option>
+                    <option value="Google Pay">Google Pay</option>
+                </select>
+                <br>
+                <br>
+                <div class="app-img">
+                    <a href="#"><img src="Paytm.svg" height="50" alt="Not Found"></a>
+                </div>
+                <br>
+                <div class="account-data"><h6>98xxxxxxx0@paytm</h6></div>
+                <br>
+                <a class="done-btn btn">Done</a>
+                <br>
+            </fieldset>
+        </div>
+        <br>
+    </section>
+
+    <!-- Google Translate for Website -->
+    <div id="google_translate_element" style="display:none"></div>
+    <div class="hi-en" onclick="changeLanguageByButtonClick()">
+        <img src="hindi-english.png" alt="Not Found" width="50">
+    </div>
+
+    <script type="text/javascript">
+
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: "en" }, 'google_translate_element');
+        }
+        let txtLang = 'hi';
+        function changeLanguageByButtonClick() {
+            if (txtLang == 'en') {
+                txtLang = 'hi';
+                var selectField = document.querySelector("#google_translate_element select");
+                for (var i = 0; i < selectField.children.length; i++) {
+                    var option = selectField.children[i];
+                    if (option.value == txtLang) {
+                        selectField.selectedIndex = i;
+                        selectField.dispatchEvent(new Event('change'));
+                        break;
+                    }
+                }
+            }
+            else{
+                txtLang = 'en';
+                var selectField = document.querySelector("#google_translate_element select");
+                for (var i = 0; i < selectField.children.length; i++) {
+                    var option = selectField.children[i];
+                    if (option.value == txtLang) {
+                        selectField.selectedIndex = i;
+                        selectField.dispatchEvent(new Event('change'));
+                        break;
+                    }
+                }
+            }
+        }
+        setInterval(() => {
+            if (document.querySelector(".skiptranslate") != null){
+                document.querySelector(".skiptranslate").style.display = "none";
+            }
+            if (document.querySelector("#goog-gt-tt") != null){
+                document.querySelector("#goog-gt-tt").style.display = "none";
+            }
+            }, 1000);
+    </script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
+
 </html>

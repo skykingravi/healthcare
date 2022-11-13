@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedbacks & Terminologies</title>
+</head>
+
+<body>
+    <script>
+        let i = 1, j = 2, k = 3;
+        if (typeof (Storage) !== "undefined") {
+            setInterval(() => {
+                while (k <= localStorage.length) {
+                    document.body.innerHTML += `<div><h1>${localStorage.getItem(i)}</h1><h4>${localStorage.getItem(j)}</h4><h6>- ${localStorage.getItem(k)}</h6></div>`;
+                    i += 3;
+                    j += 3;
+                    k += 3;
+                }
+            }, 1000);
+        }
+        else {
+            alert("Sorry, your browser does not support Web Storage !!");
+        }
+    </script>
+</body>
+
+</html>

@@ -16,6 +16,16 @@ body{
     overflow-x: hidden;
     background-color: #ECECEC;
 }
+/* For placeholders */
+::placeholder{
+    color: white;
+}
+:-ms-input-placeholder{
+    color: white;
+}
+::-ms-input-placeholder{
+    color: white;
+}
 /* Navbar */
 .nav-bar{
     width: 100%;
@@ -89,7 +99,6 @@ body{
     background: black;
     top: 15px;
     left: 0;
-    border-radius: 2.5px;
 }
 .open span {
     width: 30px;
@@ -135,7 +144,6 @@ h1{
 }
 h2{
     font-size: 45px;
-    text-decoration: underline;
 }
 h4{
     font-size: 30px;
@@ -161,7 +169,6 @@ h6{
     color: black;
     background: #ED5D85;
     padding: 10px 20px;
-    border-radius: calc(20px);
     cursor: pointer;
 }
 .btn:hover{
@@ -174,6 +181,9 @@ h6{
 }
 .abt-heading span{
     color: #ED5D85;
+}
+.abt-subheading{
+    text-decoration: underline;
 }
 /* Main Data Page */
 .main-data-heading{
@@ -197,10 +207,103 @@ h6{
     border: 2px solid black;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
-.appoint-btn{
+/* Feedback Page */
+.febk-heading{
+    color: black;
+}
+.febk-heading span{
+    color: #ED5D85;
+}
+#febk-pg fieldset{
+    width: 80vw;
+    padding: 30px;
+}
+#febk-pg fieldset span{
+    color: red;
+    font-size: 15px;
+}
+#febk-pg input{
+    padding: 5px 10px;
+    width: 90%;
+    outline: none;
     border: none;
+    background: #ED5D85;
+    color: #ECECEC;
+    font-size: 15px;
+    height: 40px;
+}
+#febk-pg textarea{
+    padding: 5px 10px;
+    width: 90%;
+    outline: none;
+    border: none;
+    background: #ED5D85;
+    color: #ECECEC;
+    font-size: 15px;
+}
+.febk-pg-subheading{
+    color: black;
+}
+.febk-pg-subheading span{
+    color: #ED5D85;
+}
+.donate-heading{
+    color: black;
+}
+.donate-heading span{
+    color: #ED5D85;
 }
 
+/* Google Translate API */
+.skiptranslate, #goog-gt-tt{
+    display: none;
+}
+.hi-en{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    z-index: 15;
+    background-color: black;
+    right: 10px;
+    font-size: 20px;
+    display: grid;
+    place-items: center;
+    bottom: 10px;
+    cursor: pointer;
+    color: #ECECEC;
+}
+#donate .donate-bx{
+    display: none;
+}
+#donate fieldset{
+    width: 80vw;
+    padding: 30px;
+    position: relative;
+}
+#donate .hidden{
+    display: none;
+}
+#donate .visible{
+    display: initial;
+}
+#donate fieldset span{
+    color: red;
+    font-size: 15px;
+}
+#donate select{
+    padding: 5px 10px;
+    width: 90%;
+    outline: none;
+    border: none;
+    text-align: center;
+    background: #ED5D85;
+    cursor: pointer;
+    color: #ECECEC;
+    font-size: 15px;
+    height: 40px;
+}
+
+/* Media queries */
 @media screen and (max-width: 800px) {
     .menu{
         display: initial;
@@ -237,5 +340,17 @@ h6{
     }
     .nav-bar ul.show{
         right: 0;
+    }
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    h4{
+        font-size: 25px;
+    }
+    h6{
+        font-size: 20px;
     }
 }
