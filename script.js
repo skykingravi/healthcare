@@ -51,3 +51,7 @@ document.querySelector("#donate .done-btn").addEventListener("click", () => {
     document.querySelector("#donate .donate-bx").classList.toggle("visible");
     document.querySelector("#donate .redirect-btn").classList.toggle("hidden");
 });
+
+function display(val) {
+            document.getElementById(`${val}`).style.display = "block";
+        }

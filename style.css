@@ -125,7 +125,6 @@ body{
 .close span:nth-child(3) {
     transform: rotateZ(-45deg);
 }
-/* Main page */
 /* Headings */
 h1{
     font-size: 70px;
@@ -134,6 +133,10 @@ h1{
 }
 h2{
     font-size: 45px;
+}
+h3{
+    font-size: 35px;
+    text-decoration: underline;
 }
 h4{
     font-size: 30px;
@@ -164,6 +167,12 @@ h6{
 .btn:hover{
     transform: translateY(-3px);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+.main-heading{
+    color: black;
+}
+.main-heading span{
+    color: #ED5D85;
 }
 /* About Page */
 .abt-heading{
@@ -292,6 +301,101 @@ h6{
     font-size: 15px;
     height: 40px;
 }
+.schm-heading{
+    color: black;
+}
+.schm-heading span{
+    color: #ED5D85;
+}
+
+#delhi{
+    display: none;
+}
+#andhraPradesh{
+    display: none;
+}
+
+#arunachalPradesh{
+     display:none;
+}
+
+#assam{
+    display: none;
+
+}
+#bihar{
+    display: none
+    ;
+}
+#chandigarh{
+    display: none;
+}
+#chattisgarh{
+    display: none
+    ;
+}
+#goa{
+    display: none;
+}
+#gujarat{
+    display: none;
+}
+#mMaharashtra{
+    display: none
+    ;
+}
+#haryana{
+    display: none
+    ;
+}
+
+#himachalPradesh{
+    display: none
+    ;
+}
+#telangana{
+    display:none;
+}
+#punjab{
+    display: none;
+}
+#rajasthan{
+    display: none;
+}
+#karnatka{
+    display: none;
+}
+#tamilnadu{
+    display: none;
+}
+#tripura{
+    display: none;
+}
+.nom{
+    transition: 1.9s;
+}
+.schm-heading{
+    color: black;
+}
+.schm-heading span{
+    color: #ED5D85;
+}
+
+.nom{
+    display: none;
+}
+.nom1 select{
+    padding: 5px 10px;
+    width: 90%;
+    outline: none;
+    border: none;
+    text-align: center;
+    background: #ED5D85;
+    cursor: pointer;
+    color: #ECECEC;
+    font-size: 15px;
+    height: 40px;
+}
 
 /* Media queries */
 @media screen and (max-width: 800px) {
@@ -335,6 +439,9 @@ h6{
         font-size: 50px;
     }
     h2{
+        font-size: 35px;
+    }
+    h3{
         font-size: 30px;
     }
     h4{
