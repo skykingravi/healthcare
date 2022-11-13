@@ -1,0 +1,24 @@
+.schemes{
+    margin-right: 45px;
+    margin-left: 45px;
+    padding:40px ;
+}
+h3{
+    margin-top: 45px;
+}
+h1{
+margin-top:45px
+;
+margin-left: 50px;
+margin-right:50px
+
+}
+body{
+    background-color: #fec3df;
+}
+.schemes{
+    background-image:url("https://media.istockphoto.com/id/1277507466/photo/woman-hands-protecting-female-sign.jpg?s=612x612&w=0&k=20&c=qAaX6Q8iW-WC888lGIhdFCBZ5mj7I4d0sXyQ-s7T-50=");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

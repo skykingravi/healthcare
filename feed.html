@@ -6,15 +6,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedbacks & Terminologies</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        /* Color Codes - #ECECEC & #ED5D8F */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            transition: all .5s ease;
+        }
+
+        body {
+            width: 100vw;
+            overflow-x: hidden;
+            background-color: #ECECEC;
+            padding: 50px 20px;
+        }
+
+        h1 {
+            font-size: 70px;
+            color: #ED5D85;
+            text-decoration: underline;
+            line-height: 80px;
+        }
+
+        h2 {
+            font-size: 50px;
+            text-decoration: underline;
+        }
+
+        h4 {
+            font-size: 30px;
+        }
+
+        h6 {
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: 800px) {
+            h1 {
+                font-size: 40px;
+            }
+
+            h2 {
+                font-size: 25px;
+            }
+
+            h4 {
+                font-size: 20px;
+            }
+
+            h6 {
+                font-size: 15px;
+            }
+        }
+    </style>
 </head>
 
 <body>
+    <h1 class="main-head">Feedback & Terminologies</h1>
+    <br>
+    <hr>
     <script>
         let i = 1, j = 2, k = 3;
         if (typeof (Storage) !== "undefined") {
             setInterval(() => {
                 while (k <= localStorage.length) {
-                    document.body.innerHTML += `<div><h1>${localStorage.getItem(i)}</h1><h4>${localStorage.getItem(j)}</h4><h6>- ${localStorage.getItem(k)}</h6></div>`;
+                    document.body.innerHTML += `<br><div><h2>${localStorage.getItem(i)}</h2><h4>${localStorage.getItem(j)}</h4><h6>- by ${localStorage.getItem(k)}</h6></div><br><hr>`;
                     i += 3;
                     j += 3;
                     k += 3;
